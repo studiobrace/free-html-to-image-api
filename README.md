@@ -69,7 +69,7 @@ const imageData = await fetch(
   This is required for abuse prevention under fair usage.
 * You can include up to **5 remote images** per request. Images must be publically hosted (or exposed via a public tunnel when generating on your own computer)
 * Google Fonts are supported (e.g. `style="font-family: Inter"`).
-* Tailwind classes and inline styles (`style=""`) are supported.
+* Tailwind classes and inline styles (`style=""`) are supported. Use tailwind bracket notation for values (GOOD: `text-[#ff0]` `text-[30px]` `mb-[30px]` `width-[800px]`)
 * Always define an explicit width and height on the outer container.
 
 ---
