@@ -43,13 +43,7 @@ A free API for generating images using HTML + Tailwind CSS.
 
 ## Usage
 
-Send a server-side `POST` request to:
-
-```
-https://free-html-to-image.studiobrace.com/?creator=your@email.com
-```
-
-The request body should be raw HTML. The response will be a `PNG` image buffer.
+Send a server-side `POST` request to `https://free-html-to-image.studiobrace.com/?creator=your@email.com`. The post request body should be HTML and the returned response body will be a `PNG` image data.
 
 ### JavaScript (Node / Fetch)
 
@@ -83,9 +77,10 @@ const imageData = await fetch(
 ## Usage with curl
 
 ```bash
-echo '<div class="w-[800px] h-[500px] overflow-hidden"><div class="text-red-500">Hello World</div></div>' \
-| curl -X POST "https://free-html-to-image.studiobrace.com/?creator=your@email.com" \
-  --data-binary @-
+curl -X POST \
+  "https://free-html-to-image.studiobrace.com/?creator=my@email.com" \
+  --data '<div class="w-[800px] h-[500px] bg-white flex items-center justify-center"><div class="text-[#f00] text-[30px]">Hello World 🥺👉👈</div></div>' \
+  --output image.png
 ```
 
 ---
