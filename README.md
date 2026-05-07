@@ -49,8 +49,8 @@ Send a server-side `POST` request to `https://free-html-to-image.studiobrace.com
 
 ```js
 const html = `
-<div class="w-[800px] h-[500px] overflow-hidden">
-  <div class="text-red-500">Hello World</div>
+<div class="w-[800px] h-[500px] bg-yellow-100 flex items-center justify-center">
+  <div class="text-[#f00] text-[30px]">Hello World 🥺👉👈</div>
 </div>
 `;
 
@@ -66,11 +66,11 @@ const imageData = await fetch(
 ### Notes
 
 * Replace `?creator=your@email.com` with your actual email (or your Git author email).
-  This is required for abuse prevention under fair usage.
+  This is required for abuse prevention
 * You can include up to **5 remote images** per request. Images must be publically hosted (or exposed via a public tunnel when generating on your own computer)
-* Google Fonts are supported (e.g. `style="font-family: Inter"`).
-* Tailwind classes and inline styles (`style=""`) are supported. Use tailwind bracket notation for values (GOOD: `text-[#ff0]` `text-[30px]` `mb-[30px]` `width-[800px]`)
-* Always define an explicit width and height on the outer container.
+* Google Fonts are supported (ie. `style="font-family: Inter"`).
+* Tailwind classes and inline styles (`style=""`) are supported. Use tailwind bracket notation for sizes or custom colors  (GOOD: `text-[#ff0]` `text-[30px]` `mb-[30px]` `width-[800px]`)
+* Always define an explicit width and height on the outer container (GOOD: `<div class="w-[800px] h-[500px] bg-blue"></div>`)
 
 ---
 
@@ -79,7 +79,7 @@ const imageData = await fetch(
 ```bash
 curl -X POST \
   "https://free-html-to-image.studiobrace.com/?creator=my@email.com" \
-  --data '<div class="w-[800px] h-[500px] bg-white flex items-center justify-center"><div class="text-[#f00] text-[30px]">Hello World 🥺👉👈</div></div>' \
+  --data '<div class="w-[800px] h-[500px] bg-yellow-100 flex items-center justify-center"><div class="text-[#f00] text-[30px]">Hello World 🥺👉👈</div></div>' \
   --output image.png
 ```
 
@@ -91,9 +91,9 @@ curl -X POST \
 import { renderToString } from "react-dom/server";
 
 const Image = () => (
-  <div className="w-[800px] h-[500px] overflow-hidden">
-    <div className="text-red-500">Hello World</div>
-  </div>
+<div class="w-[800px] h-[500px] bg-yellow-100 flex items-center justify-center">
+  <div class="text-[#f00] text-[30px]">Hello World 🥺👉👈</div>
+</div>
 );
 
 function generateImageResponse() {
