@@ -164,16 +164,14 @@ await import("node:fs/promises").then(fs =>
 
 ### How can this be free?
 
-It is currently subsidized by other Studio Brace projects. We built this for our own use and are sharing it freely.
+It is currently subsidized by other Studio Brace products. We built this for our own use and are sharing it freely with love :)
 
 ### What is fair usage?
 
-If you generate **100+ images in quick succession**, or **1000+ images per day**, you may be rate limited.
+If you generate **100+ images in quick succession**, or **1000+ images per day**, you may be see errors (rate limited)
 
-For higher-volume use cases, contact us at:
+For higher-volume use cases we’ll work with you to find a suitable solution, contact us at:
 **[hi@studiobrace.com](mailto:hi@studiobrace.com)**
-
-We’ll work with you to find a suitable solution.
 
 ### What is your uptime?
 
