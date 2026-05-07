@@ -10,15 +10,18 @@ A free API for generating images using HTML + Tailwind CSS.
 * Create shareable announcement graphics
 * Produce campaign visuals at scale
 
-#### 🌐 Web & SEO
+#### 🌐 Web & SEO / GEO
 
-* Generate Open Graph (OG) / preview images for pages
+* Improve link previews for SEO and sharing (Open Graph (OG) / preview images)
 * Create dynamic blog post thumbnails
-* Improve link previews for SEO and sharing
+
+### APPs (Swift / React Native)
+
+* Create "sharing card" images that users can share on socials
 
 #### ⚙️ Automation & Scripting
 
-* Batch-generate images from templates (e.g. invoices, receipts, cards)
+* Batch-generate images from templates (e.g. cards)
 * Create scheduled or event-based image generation pipelines
 
 #### 🤖 AI / Agent Workflows
@@ -182,3 +185,7 @@ If you require strict reliability or isolation from free-tier usage, please cont
 ### Is this actually free?
 
 Absolutley! Please just follow the fair usage guidelines above to keep it sustainable
+
+## More information:
+
+Please visit: [https://free-html-to-image.studiobrace.com](https://free-html-to-image.studiobrace.com)
